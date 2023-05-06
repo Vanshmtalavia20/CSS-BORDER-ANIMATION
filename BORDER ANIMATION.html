@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDER ANIMATION</title>
+        
+    </body>
+    <style>
+
+      body
+      {
+         background: lightblue;
+      }
+     .main
+     {
+        height: 370px;
+        width: 300px;
+        background: transparent;
+        /* border: 2px solid; */
+        margin: 150px auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .main .b1
+    {
+        height: 500px;
+        width: 500px;
+        background: linear-gradient(rgb(35, 237, 35),rgb(225, 44, 71),rgb(210, 11, 210),rgb(222, 71, 16));
+        animation: ok .3s linear infinite;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+    }
+
+    .main .b2
+    {
+        height: 350px;
+        width: 280px;
+        background: black;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    @keyframes ok
+    {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="b1"></div>
+        <div class="b2"></div>
+    </div>
+</body>
+</html>
